@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calcolo del prezzo del biglietto del treno</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <label for="chil">Km</label>
-    <input type="number" id="chil">
-    <label for="anni">Anni</label>
-    <input type="number" id="anni">
-    <button id="calcolaButton">calcola prezzo</button>
-    
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="azzurro">
+        <div id="inputs">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div><label for="nome">Come ti chiami?</label></div>
+                <input type="text" id="nome">
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <label for="km">Quanti km vuoi percorrere?</label>
+                <input type="number" id="km">
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <label for="anni">Quanti anni hai?</label>
+                <input type="number" id="anni" max="110">
+            </div>
+        </div>
+        <button id="calcola">Genera</button>
+        <button id="annulla">Annulla</button>
+    </div>
+
+    <h2 id="biglietto-titolo">IL TUO BIGLIETTO:</h2>
+    <div id="biglietto" class="azzurro">
+        <div id="biglietto-flex">
+            <div>
+                <h3>NOME PASSEGGERO</h3>
+                <div id="nome-passeggero"></div>
+            </div>
+            <div>
+                <h3>Offerta</h3>
+                <div id="offerta"></div>
+            </div>
+            <div>
+                <h3>Sconto Previsto</h3>
+                <div id="sconto-previsto"></div>
+            </div>
+            <div>
+                <h3>Costo Totale</h3>
+                <div id="costo-totale"></div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
+
 </html>

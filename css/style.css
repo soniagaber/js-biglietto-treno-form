@@ -1,0 +1,54 @@
+
+body{
+    background-color: blueviolet;
+}
+
+*{
+    font-family: sans-serif;
+}
+
+input{
+    margin-top: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+#inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#calcola, #annulla{
+    border-radius: 5px;
+    padding: 8px;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+#calcola{
+    margin-right: 20px;
+}
+
+h1, h2{text-align: center;}
+
+.azzurro{background-color: cadetblue;
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left: 150px;
+margin-right: 150px;
+padding: 30px;
+border-radius: 15px;
+text-align: center;}
+
+#biglietto-titolo, #biglietto{
+    display: none;
+}
+
+#biglietto-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#biglietto-flex>div>div{margin-bottom: 18.72px;}
